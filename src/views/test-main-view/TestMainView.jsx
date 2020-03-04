@@ -1,21 +1,16 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from "react";
+import TestTextComponent from "components/TestTextComponent";
+import TestReducer from "reducers/TestReducer";
 
-import TestTextComponent from 'components/TestTextComponent'
-
-const camelCaseVarible = 'team'
+const camelCaseVarible = "team";
 
 const MainView = () => {
+	const [name, setName] = useState("React");
+	return (
+		<TestReducer>
+			<TestTextComponent />
+		</TestReducer>
+	);
+};
 
-  return (
-    <Fragment>
-      <TestTextComponent>
-        <b>
-          Hi, {camelCaseVarible} this is a simple example
-        </b>
-      </TestTextComponent>
-    </Fragment>
-  )
-}
-
-
-export default MainView
+export default MainView;
