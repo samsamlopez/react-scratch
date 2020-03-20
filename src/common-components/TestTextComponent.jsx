@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { StoreContext } from "reducers/TestReducer";
+import { StoreContext } from "contexts/TestContext";
 
 const TestTextComponent = props => {
 	const [state, dispatch] = useContext(StoreContext);

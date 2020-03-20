@@ -1,8 +1,9 @@
+import React from "react"
 import './App.css';
-import TestMainView from './views/test-main-view/TestMainView'
+import Main from './views/Main'
 
 function App() {
-  // Here you will use context api/router etc.
+  return <Main />
 }
 
-export default TestMainView;
+export default App;
